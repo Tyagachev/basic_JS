@@ -84,10 +84,12 @@ console.log (sumNum4 (a, b));
 */
 
 //Задача 5
+let a = Number(prompt('Введите первое число'));
+let b = Number(prompt('Введите второе число'));
 
 function mathOperation(operation, arg1, arg2) {
-    arg1 = 8;
-    arg2 = 5;
+    arg1 = a;
+    arg2 = b;
         switch(operation) {
             case '+':
                 return(arg1 + arg2);
