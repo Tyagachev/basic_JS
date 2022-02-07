@@ -51,7 +51,7 @@ alert (a - b);
 }
 */
 
-
+/*
 //Задача 4
 
 let a = Number(prompt('Введите первое число'));
@@ -77,9 +77,28 @@ function sumNum4 (a, b) {
     return a - b;
 }
 
-alert (sumNum1 (a, b));
-alert (sumNum2 (a, b));
-alert (sumNum3 (a, b));
-alert (sumNum4 (a, b));
+console.log (sumNum1 (a, b));
+console.log (sumNum2 (a, b));
+console.log (sumNum3 (a, b));
+console.log (sumNum4 (a, b));
+*/
 
+//Задача 5
 
+function mathOperation(operation, arg1, arg2) {
+    arg1 = 8;
+    arg2 = 5;
+        switch(operation) {
+            case '+':
+                return(arg1 + arg2);
+            case '-':
+                return(arg1 - arg2);
+            case '*':
+                return(arg1 * arg2);
+            case '/':
+                return(arg1 / arg2);
+            default:
+                'Неизвестная ошибка';
+        }
+    }
+    alert (mathOperation("*"));
