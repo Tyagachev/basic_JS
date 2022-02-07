@@ -47,46 +47,39 @@ alert (a - b);
 } else if (a && b < 0) {
     alert (a * b);
 }else{
-    alert('Ошибка вычисления');
+    alert('Вы ввели не число');
 }
 */
 
-/*
-let a = Number(prompt('Введите первое число'));
-let b = Number(prompt('Введите второе число'));
-
-function sum (a,b) {
-    return (a * b);
-
-}
-
-alert(sum(a,b));
-*/
 
 //Задача 4
 
 let a = Number(prompt('Введите первое число'));
 let b = Number(prompt('Введите второе число'));
 
-function sumNum (a, b) {
+function sumNum1 (a, b) {
     return a * b;
 }
-alert (sumNum (a, b));
+
 
 
 function sumNum2 (a, b) {
     return a / b;
 }
-alert (sumNum2 (a, b));
+
 
 function sumNum3 (a, b) {
     return a + b;
 }
-alert (sumNum3 (a, b));
+
 
 function sumNum4 (a, b) {
     return a - b;
 }
+
+alert (sumNum1 (a, b));
+alert (sumNum2 (a, b));
+alert (sumNum3 (a, b));
 alert (sumNum4 (a, b));
 
 
