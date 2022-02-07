@@ -31,8 +31,62 @@ alert(b);
 
 
 // Задача 2
-
+/*
 let a = 2;
 let x = 1 + (a *=2);
 //Ответ 5. 1 + (a = a * 2);
 //(a *=2) это сокращенная запись a = a * 2
+*/
+
+//Задача 3
+/*
+let a = Number(prompt('Введите первое число'));
+let b = Number(prompt('Введите второе число'));
+if (a && b >=0) {
+alert (a - b);
+} else if (a && b < 0) {
+    alert (a * b);
+}else{
+    alert('Ошибка вычисления');
+}
+*/
+
+/*
+let a = Number(prompt('Введите первое число'));
+let b = Number(prompt('Введите второе число'));
+
+function sum (a,b) {
+    return (a * b);
+
+}
+
+alert(sum(a,b));
+*/
+
+//Задача 4
+
+let a = Number(prompt('Введите первое число'));
+let b = Number(prompt('Введите второе число'));
+
+function sumNum (a, b) {
+    return a * b;
+}
+alert (sumNum (a, b));
+
+
+function sumNum2 (a, b) {
+    return a / b;
+}
+alert (sumNum2 (a, b));
+
+function sumNum3 (a, b) {
+    return a + b;
+}
+alert (sumNum3 (a, b));
+
+function sumNum4 (a, b) {
+    return a - b;
+}
+alert (sumNum4 (a, b));
+
+
