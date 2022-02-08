@@ -39,8 +39,10 @@ let x = 1 + (a *=2);
 
 //Задача 3
 
+// Введенные данные используются в 3, 4 и 5 задачах.
 let a = Number(prompt('Введите первое число'));
 let b = Number(prompt('Введите второе число'));
+
 if (a && b >=0) {
 alert (a - b);
 } else if (a && b < 0) {
@@ -50,9 +52,6 @@ alert (a - b);
 }
 
 //Задача 4
-
-let a = Number(prompt('Введите первое число'));
-let b = Number(prompt('Введите второе число'));
 
 function sumNum1 (a, b) {
     return a * b;
@@ -76,9 +75,6 @@ console.log (sumNum3 (a, b));
 console.log (sumNum4 (a, b));
 
 //Задача 5
-
-let a = Number(prompt('Введите первое число'));
-let b = Number(prompt('Введите второе число'));
 
 function mathOperation(operation, arg1, arg2) {
     arg1 = a;
