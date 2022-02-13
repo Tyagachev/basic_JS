@@ -7,12 +7,12 @@ let values = 10;
 for(let i = 0; i <= values; i++) {
     if (i == 0) {
         console.log ( i +  '– ноль это ноль');
-	} else if (i % 2 == 0) {
+	}else if (i % 2 == 0) {
 	console.log ( i +  '– четное число');
 	} else {
 	console.log ( i + '– нечетное число');
 	}
-}
+};
 
 // Задача 2
 
@@ -45,7 +45,7 @@ console.log (post.comments[0].rating["dislikes"]);
 console.log (post.comments[1].userId);
 console.log (post.comments[1].text);
 
-// Задача 3
+//Задача 3
 
 const products = [
     {
@@ -66,8 +66,7 @@ let percent = 15;
 let numb_percent = products[0].price /100 * percent;
 products.forEach(element => console.log(element.price - numb_percent));
 
-
-// Задача 4
+//Задача 4
 
 const products = [
     {
@@ -96,6 +95,20 @@ const products = [
     },
 ];
 
+//Сортировка по наличию фоток
+const productsSearch = products.filter(function(products) {
+    return products.photos && products.photos.length > 0;
+});
+console.log(productsSearch);
 
-const result = products.filter(word => word.length > 3);
-console.log(result);
+//Сортировка по цене
+const productsSortPrice = products.sort(function priceSort(price1,price2) {
+    return (price1.price - price2.price);
+});
+console.log(productsSortPrice);
+
+//Задача 7
+for (let x='x'; x.length <= 20; x += 'x'){
+    console.log(x);
+    
+};
