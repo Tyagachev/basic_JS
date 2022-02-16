@@ -76,20 +76,22 @@ console.log (sumNum4 (a, b));
 
 //Задача 5
 
-function mathOperation(operation, arg1, arg2) {
-    arg1 = a;
-    arg2 = b;
-        switch(operation) {
-            case '+':
-                return(arg1 + arg2);
-            case '-':
-                return(arg1 - arg2);
-            case '*':
-                return(arg1 * arg2);
-            case '/':
-                return(arg1 / arg2);
-            default:
-                'Ошибка';
-        }
+function mathOperation( arg1, arg2,operation) {
+
+    switch(operation) {
+        case '*':
+            return(arg1, arg2);
+        case '/':
+            return(arg1, arg2);
+        case '+':
+            return(arg1, arg2);
+        case '-':
+            return(arg1, arg2);
+        default:
+            'Ошибка';
     }
-    alert (mathOperation("*"));
+}
+alert (mathOperation(a,b, '*'));
+alert (mathOperation(a,b, '/'));
+alert (mathOperation(a,b, '+'));
+alert (mathOperation(a,b, '-'));
