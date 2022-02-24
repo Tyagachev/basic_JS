@@ -41,7 +41,13 @@
     -->
 
     <script>
-        
+        let allImg = document.querySelectorAll('img');
+        setTimeout(function(){
+        for(i = 0; i < allImg.length; i++) {
+            allImg[i].setAttribute ('src','images/1.jpg');
+        }
+    },3000)
+
     </script>
 </body>
 </html>
