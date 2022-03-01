@@ -80,12 +80,19 @@ const products = {
  * Эта функция должна вызываться при клике по кнопкам.
  * @param {MouseEvent} event
  */
+
+let productSelect = document.querySelector('.products');
+let buttonsSelect  = document.querySelectorAll('button');
+buttonsSelect.forEach(function(button){
+    button.addEventListener ('click', clickHandler);
+});
+
 function clickHandler(event) {
     //вам нужно очищать содержимое .products
-    
     //в showCategory надо передать строку с типом категории, тип берите
     //из атрибута data-type у кнопки, по которой кликнули.
-    
+    productSelect.innerHTML = "";
+    showCategory(event.target.dataset.type);
 }
 
 /**
@@ -96,7 +103,12 @@ function clickHandler(event) {
  * по которой кликнули.
  */
 function showCategory(category) {
-    
+    let productsArray = products[category];
+    let productsString = "";
+    productsArray.forEach(function (product) {
+        productsString = productsString + getProductMarkup(product);
+    });
+    productSelect.insertAdjacentHTML("afterbegin", productsString); 
 }
 
 /**
@@ -109,5 +121,12 @@ function showCategory(category) {
  * в верху этого файла.
  */
 function getProductMarkup(product) {
-
+    return `
+            <div class="product">
+                <div>${product.name}</div>
+                <img src="${product.imageUrl}" alt="">
+                <div>${product.price}</div>
+                <a href="https://example.com/producs/${product.id}">Подробнее</a>
+            </div>
+        `;
 }
