@@ -103,8 +103,13 @@ function clickHandler(event) {
  * по которой кликнули.
  */
 function showCategory(category) {
+<<<<<<< HEAD
     let productsString = "";
     let productsArray = products[category];
+=======
+    let productsArray = products[category];
+    let productsString = "";
+>>>>>>> lesson-7
     productsArray.forEach(function (product) {
         productsString = productsString + getProductMarkup(product);
     });
