@@ -20,7 +20,11 @@
     -->
 
     <script>
-        
+        let dataSearch = document.querySelectorAll('button');
+        dataSearch.forEach(function(element){
+            alert(element.dataset.id);
+            alert(element.dataset.value);
+        });
     </script>
 </body>
 </html>
